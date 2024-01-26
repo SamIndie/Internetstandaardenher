@@ -1,0 +1,359 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*general*/
+
+body{
+    background-size: cover;
+    background-image: url('../img/backgroundindex.png');
+    background-repeat: no-repeat;
+    background-attachment:fixed
+}
+header{
+    background-color: rgb(144, 180, 225, 0.9);
+    margin: 2em;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.ul_nav{
+    display: flex;
+    gap: 1.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    list-style: none;
+    text-decoration: none;
+    text-transform:uppercase;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  
+}
+
+nav a{
+    color: rgb(115,14,14);
+    text-decoration: none;
+    position: relative;
+    transition: 0.4s ease-in-out;
+
+}
+
+nav a:hover{
+    color: midnightblue;
+    background-color: rgb(244, 195, 145, 0.7);
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    border-radius: 2em;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+p{  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.5em;
+    color: midnightblue;
+    background-color: rgb(244, 195, 145, 0.7);
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    margin-top: 1em;
+    border-radius: 1em;
+
+   
+}
+
+footer{
+    color: rgb(115,14,14);
+    font-size: 2em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    background-color: rgb(144, 180, 225, 0.9);
+    padding: 1em 2em 1em 2em;
+    position: relative;
+    width: 100%;
+    border-radius: 1em;
+  }
+
+    
+ 
+  .ul_footer{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+ }
+
+
+
+
+
+/* index.html*/
+
+ 
+
+ 
+ .video_index{
+   
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 15em;
+    width: 15em;
+     
+ }
+ 
+
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color:darkred;
+    margin: 1em 2em 2em 2em;
+    text-align: center;
+}
+
+h2{
+    padding: 0.5em 2em 2em 4em;
+    font-size: 2.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:maroon;
+    
+}
+
+
+ 
+ .phomepag1{
+     display: flex;
+     flex-direction: column;
+     
+ }
+ 
+ .lobi{
+     background-color: rgb(189, 217, 254, 0.0);
+ }
+ 
+ .gallery{
+     display: flex;
+     justify-content: space-around;
+     justify-content: center;
+ }
+ 
+ 
+ 
+ .bttt{
+   
+   background-color: transparent;
+   border-color: transparent;
+   padding: 1em;
+ }
+  
+.bttt :hover{
+    rotate: 360deg;
+    transition-duration: 0.3s;
+    
+}
+    
+ 
+ 
+   
+
+/* om figcaption boven centered van je foto te krijgen */
+.img_home{
+   
+    margin: 1em 1em 1em 1em;
+}
+
+
+
+.gallery figcaption{
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 1em 1em 1em 1em;
+    color: brown;
+    background-color: rgb(244, 195, 145, 0.7);
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.75em;
+}
+  
+
+
+/* Photography*/
+
+
+
+.container:first-of-type{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+   
+}
+.container:first-of-type img{
+    
+    margin-top: 6em;
+    margin-left: 4em;
+}
+
+.container:first-of-type p{
+    
+    margin: 3em 4em 2em 4em;
+   
+   
+}
+
+.container:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+}
+.container:nth-of-type(2) img{
+       margin-left: 2em;
+       margin-right: 2em;
+}
+
+.container:nth-of-type(2) p{
+     
+    margin-left: 2em;
+}
+
+.container:nth-of-type(3){
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+.container:nth-of-type(3) img{
+   
+     margin-left: 4em;
+}
+
+.container:nth-of-type(3) p{
+   
+    margin-left: 4em;
+    margin-right: 2em;
+    
+}
+
+.container:nth-of-type(4){
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.container:nth-of-type(4) img{
+    margin-left: 2em;
+    margin-right: 2em;
+    
+}
+
+.container:nth-of-type(4) p{
+margin-left: 2em;
+margin-bottom: 2em;
+
+}
+
+.container p{
+    font-size: 1.75em;
+    padding: 2em 1em 2em 1em;
+    text-align: left;
+   
+
+   
+
+}
+
+
+
+/* account page bewerkt om fijner uit te zien */
+
+html.account{
+    background-image:url(../img/backgroundindex.png);
+}
+
+.account p{
+    font-size: larger;
+    width: 80%;
+    margin-left: 10em;
+}
+
+.account label,
+.account input{
+    display: flex;
+}
+
+.account input{
+    padding: 1em 3em 2em 0;
+}
+
+form{
+    width: 40em;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.algemenevoorwaarden li input{
+    margin-left: ;
+}
+
+.algemenevoorwaarden h4{
+    margin-right: ;
+    margin-bottom: 2em;
+}
+
+/* art page aangepast */
+
+.h2_art{
+    margin-top: 2em;
+    pad
+}
+.img_art{
+    padding: 3em;
+    background-color: rgb(244, 195, 145, 0.7);
+    border-radius: 2em;
+}
+
+.video_art{
+    margin-top: 6em;
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   height: 30em;
+   width: 50em;
+
+}
+
+.canvasart{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+   
+
+}
+
+
+.wordart{
+display: flex;
+justify-content: space-evenly;
+margin-top: 5em;
+}
+
+   
+   
+
+
+/* tot hier heet jill aangepast */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
