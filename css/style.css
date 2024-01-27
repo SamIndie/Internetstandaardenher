@@ -8,10 +8,11 @@
 
 body{
     background-size: cover;
-    background-image: url('../img/backgroundindex.png');
+    background-image: url('../img/backgroundacc.jpeg');
     background-repeat: no-repeat;
     background-attachment:fixed
 }
+
 header{
     background-color: rgb(144, 180, 225, 0.9);
     margin: 2em;
@@ -21,6 +22,8 @@ header{
 
 .ul_nav{
     display: flex;
+    justify-content: space-between;
+   position: relative;
     gap: 1.5em;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2em;
@@ -29,7 +32,6 @@ header{
     text-transform:uppercase;
     flex-wrap: wrap;
     justify-content: center;
-   
   
 }
 
@@ -52,7 +54,7 @@ nav a:hover{
 }
 
 p{  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 0.5em;
+    font-size: 0.65em;
     color: midnightblue;
     background-color: rgb(244, 195, 145, 0.7);
     padding: 1.5em 1.5em 1.5em 1.5em;
@@ -91,7 +93,6 @@ footer{
 
  
 
- 
  .video_index{
    
     margin-top: 5%;
@@ -102,11 +103,11 @@ footer{
  }
  
 
-h1 {
+h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 3em;
-    color:darkred;
-    margin: 1em 2em 2em 2em;
+    font-size: 1em;
+    color:midnightblue;
+    margin: 0 1em 0 1em;
     text-align: center;
 }
 
@@ -121,56 +122,27 @@ h2{
 
 
  
- .phomepag1{
-     display: flex;
-     flex-direction: column;
-     
- }
- 
  .lobi{
      background-color: rgb(189, 217, 254, 0.0);
+     font-size: 1em;
  }
  
  .gallery{
-     display: flex;
-     justify-content: space-around;
-     justify-content: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 3em;
+
  }
- 
- 
- 
- .bttt{
-   
-   background-color: transparent;
-   border-color: transparent;
-   padding: 1em;
- }
-  
-.bttt :hover{
-    rotate: 360deg;
-    transition-duration: 0.3s;
-    
-}
-    
- 
- 
-   
 
-/* om figcaption boven centered van je foto te krijgen */
-.img_home{
-   
-    margin: 1em 1em 1em 1em;
-}
-
-
-
+ 
 .gallery figcaption{
     
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2em;
     text-align: center;
     text-transform: capitalize;
-    margin: 1em 1em 1em 1em;
+    margin: 1em;
     color: brown;
     background-color: rgb(244, 195, 145, 0.7);
     padding: 0.5em 1em 0.5em 1em;
@@ -179,8 +151,81 @@ h2{
   
 
 
-/* Photography*/
 
+
+
+/* art*/
+
+.h2_art{
+    margin-top: 2em;
+    
+}
+
+.img_art{
+    padding: 3em;
+    background-color: rgb(244, 195, 145, 0.7);
+    border-radius: 2em;
+}
+
+.video_art{
+    margin-top: 6em;
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   height: 30em;
+   width: 50em;
+
+}
+
+.canvasart{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+   
+}
+
+.wordart{
+display: flex;
+justify-content: space-evenly;
+margin-top: 5em;
+}
+
+.decor1{
+   position:sticky;
+   float: right;
+   animation: rotation 3s linear infinite;
+}
+
+.decor2{
+    position: absolute;
+    margin-left: 6em;
+   animation: rotation 3s linear infinite;
+}
+
+
+@keyframes rotation{
+    0% {
+        -webkit-transform: rotate(0deg);
+      }
+      25% {
+        -webkit-transform: rotate(4deg);
+      }
+      50% {
+        -webkit-transform: rotate(0deg);
+      }
+      75% {
+        -webkit-transform: rotate(-5deg);
+      }
+      100% {
+        -webkit-transform: rotate(0deg);
+      }
+    }
+
+
+
+
+/* Photography*/
 
 
 .container:first-of-type{
@@ -263,85 +308,131 @@ margin-bottom: 2em;
 
 
 
-/* account page bewerkt om fijner uit te zien */
 
-html.account{
-    background-image:url(../img/backgroundindex.png);
+
+
+/* account*/
+
+.inl{
+  
+    margin-top: 1em;
+    list-style: none;
 }
 
-.account p{
-    font-size: larger;
-    width: 80%;
-    margin-left: 10em;
-}
-
-.account label,
-.account input{
+.inlog_btnlink{
     display: flex;
-}
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1em;
+    margin-bottom: 2em;
 
-.account input{
-    padding: 1em 3em 2em 0;
 }
 
 form{
-    width: 40em;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30em;
+   
+}
+
+
+input[type=text]{
+    width: 40%;
+    padding: 1em;
+
+}
+
+label{
+    margin-top: 1em;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:darkblue;
+}
+
+.button_inloggen{
+    text-transform: capitalize;
+    color: antiquewhite ;
+    font-size: 1em;
+    padding: 1em;
+    background-color: darksalmon;
+    border-radius: 1em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.wwv{
+    margin-left: 2em;
+}
+
+.nieuwacc_tekst{
+    text-transform: capitalize;
+    color: midnightblue;
+    text-align: center;
+    margin-top: 3em;
+}
+
+
+.algemenevoorwaarden{
+  
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.algemenevoorwaarden p{
+   
+    background-color: transparent;
+    font-size: 1em;
+}
+
+input[type=checkbox]{
+  margin-top: 3em;
+}
+
+.ai {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 2em;
     margin-bottom: 3em;
 }
 
-.algemenevoorwaarden li input{
-    margin-left: ;
-}
-
-.algemenevoorwaarden h4{
-    margin-right: ;
-    margin-bottom: 2em;
-}
-
-/* art page aangepast */
-
-.h2_art{
-    margin-top: 2em;
-    pad
-}
-.img_art{
-    padding: 3em;
-    background-color: rgb(244, 195, 145, 0.7);
-    border-radius: 2em;
-}
-
-.video_art{
-    margin-top: 6em;
-    margin-bottom: 4em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-   height: 30em;
-   width: 50em;
+.andersinloggen{
+    border-radius: 0.5em;
+    border-color: darkblue;
+    padding: 1em;
+    background-color:antiquewhite;
+    color: midnightblue;
+    font-size: 1em;
+    text-transform: capitalize;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
+.acc_aanmaken{
+    margin-left: 30%;
+    margin-bottom: 3em;
+    text-transform: capitalize;
+    font-size: 1em;
+    color: antiquewhite;
+    padding: 1em;
+    background-color: darksalmon;
+    border-radius: 1em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
-.canvasart{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2em;
-   
-
+button:hover{
+    color: antiquewhite;
+    background-color:maroon;
+    transition: 0.5s;
 }
 
 
-.wordart{
-display: flex;
-justify-content: space-evenly;
-margin-top: 5em;
-}
 
    
    
 
 
-/* tot hier heet jill aangepast */
+
 
 
 

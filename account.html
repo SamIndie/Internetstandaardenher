@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="en" class="food">
 
@@ -14,6 +14,7 @@
   <header>
     <nav id="nav">
       <ul class="ul_nav">
+      <li><h1>Nivawo</h1></li>
       <li><a href="index.html">home</a></li>
       <li><a href="art.html">art</a></li>
       <li><a href="photography.html">photography</a></li>
@@ -24,55 +25,52 @@
 
   <main class="account">
 
-   
+    <h2>Inloggen</h2>
 
     <form>
-      <h2>Inloggen</h2>
+    <ul>
+      <li class="inl"><input type="text" placeholder="email"></li>
+      <li class="inl"><input type="text" placeholder="wachtwoord" class="inl"></li>
+    </ul>
+      </form>
 
-      <input type="text" placeholder="email" class="inl">
-      <input type="text" placeholder="password" class="inl">
-
-      <ul class="inlog">
-        <li><button type="button" id="btn">Inloggen</button></li>
-        <li><a href="#">wachtwoord vergeten?</a></li>
+      <ul class="inlog_btnlink">
+        <li><button class="button_inloggen">Inloggen</button></li>
+        <li class="wwv"><a href="#">wachtwoord vergeten?</a></li>
       </ul>
-    </form>
 
+    
+      <h3 class="nieuwacc_tekst">nieuw account aanmaken</h3>
 
-    <form>
-      <h3>Nieuw account aanmaken</h3>
-
-
+      <form>
       <label for="naam">naam</label>
-      <input type="text" name="naam" id="ivvna" required>
+      <input type="text" name="naam" required>
       <label for="email">email</label>
-      <input type="text" name="email" id="ivvna" required>
+      <input type="text" name="email" required>
       <label for="wachtwoord">wachtwoord</label>
-      <input type="text" name="wachtwoord" id="ivvna" required>
+      <input type="text" name="wachtwoord" required>
       <label for="voornaam">voornaam</label>
-      <input type="text" name="voornaam" id="ivvna" required>
+      <input type="text" name="voornaam" required>
       <label for="adres">adres</label>
-      <input type="text" name="adres" id="ivvna" required>
-      <label for="wachtwoordherhalen">password herhalen</label>
-      <input type="text" name="wachtwoord herhalen" id="ivvna" required>
+      <input type="text" name="adres" required>
+      <label for="wachtwoordherhalen">wachtwoord herhalen</label>
+      <input type="text" name="wachtwoord herhalen" required>
     </form>
 
     <ul class="algemenevoorwaarden">
       <li><input type="checkbox" name="checkbox" id="checkbox"></li>
-      <li>
-        <h4>Ik creër een account en ga akkoord met de <a href="#">algemene voorwaarden</a></h4>
-      </li>
+      <li><p>Ik creër een account en ga akkoord met de <a href="#">algemene voorwaarden</a></p></li>
     </ul>
 
-    <form>
-      <button type="button" id="btn">Account aanmaken</button>
+    <button class="acc_aanmaken">account aanmaken</button>
+    
+        <div class="ai">
+        <button class="andersinloggen">inloggen met google</button>
+        <button class="andersinloggen">inloggen met apple</button>
+        <button class="andersinloggen">inloggen met twitter</button> 
+      </div>
+      </main>
 
-      <section class="ai">
-        <input type="button" value="inloggen met google" id="andersinloggen">
-        <input type="button" value="inloggen met apple" id="andersinloggen">
-        <input type="button" value="inloggen met twitter" id="andersinloggen">
-      </section>
-    </form>
 
     <footer>
     <ul class="ul_footer">
